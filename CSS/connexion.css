@@ -1,0 +1,229 @@
+@font-face {
+	font-family: 'lobster';
+	src: url('Lobster_1.3.otf');
+	font-weight: lighter;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+Partie header
+*/
+
+header
+{
+	position: static;
+	height: 75px;
+	width: 100%;
+	border-bottom: 1px solid rgb(12,59,102);
+	position: relative;
+	background-color: rgb(27,120,209);
+}
+
+#nav-logo
+{
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	float: left;
+}
+
+#nav
+{
+	height: 75px;
+	position: absolute;
+	width: auto;
+	right: 0px;
+}
+
+#nav li 
+{
+	display: inline-block;
+	list-style-type: none;
+	line-height: 75px;
+}
+
+.header-link
+{
+	display: block;
+	height: 100%;
+	padding: 0 5px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: lobster, Arial, sans-serif;
+	color: white;
+}
+
+.header-link:hover
+{
+	background-color: rgb(19,88,162);
+	color: rgb(180,180,180);
+}
+
+/*
+Fin de la partie header
+*/
+
+/*
+Partie Formulaire de connexion
+*/
+
+section
+{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background: url("fond-sweetch.png") repeat;
+}
+
+table
+{
+	position: absolute;
+	top: 150px;
+	left: 390px;
+	width: 500px;
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: white;
+	padding: 5px;
+}
+
+#title
+{
+	height: 70px;
+	font-size: 20px;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-weight: lighter;
+	border-bottom: 1px solid #C1C1C1;
+
+}
+
+
+.content
+{
+	width: 170px;
+	height: 50px;
+	font-size: 17px;
+	font-family: "Century Gothic", Arial, sans-serif;
+}
+
+.forgot
+{
+	width: 170px;
+	height: 50px;
+	
+}
+
+.inscription
+{
+	width: 170px;
+	height: 50px;
+	color: rgb(127,127,127);
+	font-size: 14px;
+	font-family: "Century Gothic", Arial, sans-serif;
+}
+
+.inscription a 
+{
+	color: rgb(127,127,127);
+	font-size: 14px;
+	font-family: "Century Gothic", Arial, sans-serif;
+}
+
+.forgot a 
+{
+	color: rgb(127,127,127);
+	font-size: 14px;
+	font-family: "Century Gothic", Arial, sans-serif;
+}
+
+.saisie
+{
+	height: 100%;
+	width: 90%;
+	font-size: 17px;
+	font-family: "Century Gothic", Arial, sans-serif;
+}
+
+.button
+{
+	height: 100%;
+	width: 40%;
+	background-color: rgb(42,102,181);
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 17px;
+	font-family: "Century Gothic", Arial, sans-serif;
+	border-radius: 3px;
+	border: 1px solid black;
+	padding-top: 13px;
+}
+
+.button:hover
+{
+	background-color: rgb(27,65,116);
+}
+
+/* 
+Partie footer
+*/
+
+footer
+{
+	height: 200px;
+	width: 100%;
+	background-color: rgb(21,72,145);
+}
+
+.footer_link
+{
+	color: white;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	padding: 30px 0;
+}
+
+#fb
+{
+	float:left;
+	width: 50px;
+}
+
+#twitter
+{
+	float: right;
+	width: 50px;
+}
+
+#clear
+{
+	clear: left;
+}
+
+#footer-logo
+{
+	width: 100px;
+	margin: 0 auto;
+}
+
+.footerxlink
+{
+	padding-top: 30px;
+	text-align: center;
+	color: white;
+}
+
+.footer-link
+{
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+}

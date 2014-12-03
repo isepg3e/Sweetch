@@ -1,0 +1,68 @@
+/* On définit la police téléchargée */
+@font-face {
+	font-family: 'lobster';
+	src: url('Lobster_1.3.otf');
+	font-weight: lighter;
+}
+
+/* permet de mettre en full-size */
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+Partie header
+*/
+
+header
+{
+	position: relative;
+	height: 75px;
+	width: 100%;
+	border-bottom: 1px solid rgb(12,59,102);
+	background-color: rgb(27,120,209);
+}
+
+#nav-logo
+{
+	position: absolute;
+	top: 5px;
+	left: 15px;
+}
+#nav
+{
+	position: absolute;
+	height: 75px;
+	width: auto;
+	right: 0px;
+}
+
+#nav li 
+{
+	display: inline-block;
+	list-style-type: none;
+	line-height: 75px;
+}
+
+.header-link
+{
+	display: block;
+	height: 100%;
+	padding: 0 5px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: lobster, Arial, sans-serif;
+	color: white;
+}
+
+.header-link:hover
+{
+	background-color: rgb(19,88,162);
+	color: rgb(180,180,180);
+}
+
+/*
+Fin de la partie header
+*/

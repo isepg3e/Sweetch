@@ -1,0 +1,13 @@
+/* On définit la police téléchargée */
+@font-face {
+	font-family: 'lobster';
+	src: url('Lobster_1.3.otf');
+	font-weight: lighter;
+}
+
+/* permet de mettre en full-size */
+*
+{
+	margin: 0;
+	padding: 0;
+}
