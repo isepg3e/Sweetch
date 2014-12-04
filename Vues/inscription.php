@@ -11,13 +11,13 @@
 	
 	<body>
 		
-		<?php include("header.php"); ?>
+		<?php include ("header.php");?>
 
 		<section>
 
 			<div class="leftbox">
 
-				<form method="POST" action="">
+				<form method="POST" action="inscription_post.php">
 					<table>
 						<tr>
 							<td class="inscription" colspan=2 >S'inscrire</td>
@@ -40,7 +40,7 @@
 
 						<tr>
 							<td class="content">e-mail :</td>
-							<td class="content"><input class="input" type="mail" name="mail" placeholder="exemple@hotmail.fr"/></td>
+							<td class="content"><input class="input" type="mail" name="email" placeholder="exemple@hotmail.fr"/></td>
 						</tr>
 
 						<tr>
@@ -50,16 +50,16 @@
 
 						<tr>
 							<td class="content">Mot de passe :</td>
-							<td class="content"><input class="input" type="password" name="motdepasse" placeholder="Créez votre mot de passe"/></td>
+							<td class="content"><input class="input" type="password" name="mdp" placeholder="Créez votre mot de passe"/></td>
 						</tr>
 
 						<tr>
 							<td class="content">Confirmation du mot de passe :</td>
-							<td class="content"><input class="input" type="text" name="confirmation" placeholder="Confirmez votre mot de passe"/></td>
+							<td class="content"><input class="input" type="password" name="confirmation" placeholder="Confirmez votre mot de passe"/></td>
 						</tr>
 
 						<tr>
-							<td class="conditions"><a href="">Voir les conditions générales d'utilisation</a></td>
+							<td class="conditions"><a href="#######">Voir les conditions générales d'utilisation</a></td>
 						</tr>
 
 						<tr>
@@ -67,9 +67,11 @@
 						</tr>
 
 						<tr>
-							<td class="content" colspan=2><a href="#" class="button">S'inscrire</a></td>
+							<td class="content" colspan=2> <input type="submit" value="S'inscrire"/> </td>
 						</tr>
 					</table> 
+				</form>
+
 			</div>
 
 			<div class="rightbox">
@@ -78,7 +80,18 @@
 
 		</section>
 
-		<?php include("footer.php"); ?>
+<?php
+// Connexion à la base de données
+try
+{
+$bdd = new PDO('mysql:host=localhost;dbname=sweetch', 'root', 'kilo', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+}
+catch(Exception $e)
+{
+die('Erreur : '.$e->getMessage());
+}
+?>									
 
+	<?php include ("footer.php"); ?>
 	</body>
 </html>
