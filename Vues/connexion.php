@@ -4,6 +4,9 @@
 		<meta charset="UTF-8"/>
 		<title>Se connecter | Échange de logements | Sweetch</title>
 		<link rel="stylesheet" href="../CSS/connexion.css"/>
+		<link rel="stylesheet" href="../CSS/header.css"/>
+		<link rel="stylesheet" href="../CSS/footer.css"/>
+		<link rel="stylesheet" href="../CSS/general.css"/>
 		<link rel="shortcut icon" href="../Images/icon-sweetch.png"/>
 	</head>
 
@@ -43,6 +46,8 @@
 
 		</section>
 
+		<?php include("footer.php"); ?>
+
 <?php
 // Connexion à la base de données
 try
@@ -54,9 +59,6 @@ catch(Exception $e)
 die('Erreur : '.$e->getMessage());
 }
 ?>	
-
-
-		<?php include("footer.php"); ?>
 		
 	</body>
 </html>

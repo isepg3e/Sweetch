@@ -5,6 +5,9 @@
 		<meta charset="UTF-8"/>
 		<title>Inscription | Échange de logements | Sweetch</title>
 		<link rel="stylesheet" href="../CSS/inscription.css"/>
+		<link rel="stylesheet" href="../CSS/header.css"/>
+		<link rel="stylesheet" href="../CSS/footer.css"/>
+		<link rel="stylesheet" href="../CSS/general.css"/>
 		<link rel="shortcut icon" href="../Images/icon-sweetch.png"/>
 
 	</head>
@@ -75,10 +78,11 @@
 			</div>
 
 			<div class="rightbox">
-				<center><img src="sweetch-marketing.png" alt="échangez vos logements avec Sweetch"/></center>
+				<center><img src="../Images/sweetch-marketing.png" alt="échangez vos logements avec Sweetch"/></center>
 			</div>
 
 		</section>
+		<?php include ("footer.php"); ?>
 
 <?php
 // Connexion à la base de données
@@ -92,6 +96,6 @@ die('Erreur : '.$e->getMessage());
 }
 ?>									
 
-	<?php include ("footer.php"); ?>
+	
 	</body>
 </html>

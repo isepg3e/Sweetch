@@ -1,7 +1,7 @@
 /* On définit la police téléchargée */
 @font-face {
 	font-family: 'lobster';
-	src: url('Lobster_1.3.otf');
+	src: url('../Images/Lobster_1.3.otf');
 	font-weight: lighter;
 }
 

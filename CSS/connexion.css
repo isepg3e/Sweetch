@@ -1,73 +1,3 @@
-@font-face {
-	font-family: 'lobster';
-	src: url('Lobster_1.3.otf');
-	font-weight: lighter;
-}
-
-*
-{
-	margin: 0;
-	padding: 0;
-}
-
-/*
-Partie header
-*/
-
-header
-{
-	position: static;
-	height: 75px;
-	width: 100%;
-	border-bottom: 1px solid rgb(12,59,102);
-	position: relative;
-	background-color: rgb(27,120,209);
-}
-
-#nav-logo
-{
-	position: absolute;
-	top: 5px;
-	left: 15px;
-	float: left;
-}
-
-#nav
-{
-	height: 75px;
-	position: absolute;
-	width: auto;
-	right: 0px;
-}
-
-#nav li 
-{
-	display: inline-block;
-	list-style-type: none;
-	line-height: 75px;
-}
-
-.header-link
-{
-	display: block;
-	height: 100%;
-	padding: 0 5px;
-	text-decoration: none;
-	font-size: 17px;
-	font-family: lobster, Arial, sans-serif;
-	color: white;
-}
-
-.header-link:hover
-{
-	background-color: rgb(19,88,162);
-	color: rgb(180,180,180);
-}
-
-/*
-Fin de la partie header
-*/
-
 /*
 Partie Formulaire de connexion
 */
@@ -77,7 +7,7 @@ section
 	position: relative;
 	width: 100%;
 	height: 600px;
-	background: url("fond-sweetch.png") repeat;
+	background: url("../Images/fond-sweetch.png") repeat;
 }
 
 table
@@ -168,62 +98,4 @@ table
 .button:hover
 {
 	background-color: rgb(27,65,116);
-}
-
-/* 
-Partie footer
-*/
-
-footer
-{
-	height: 200px;
-	width: 100%;
-	background-color: rgb(21,72,145);
-}
-
-.footer_link
-{
-	color: white;
-	font-family: "Century Gothic", Arial, sans-serif;
-	font-size: 20px;
-	text-align: center;
-	padding: 30px 0;
-}
-
-#fb
-{
-	float:left;
-	width: 50px;
-}
-
-#twitter
-{
-	float: right;
-	width: 50px;
-}
-
-#clear
-{
-	clear: left;
-}
-
-#footer-logo
-{
-	width: 100px;
-	margin: 0 auto;
-}
-
-.footerxlink
-{
-	padding-top: 30px;
-	text-align: center;
-	color: white;
-}
-
-.footer-link
-{
-	font-family: "Century Gothic", Arial, sans-serif;
-	font-size: 12px;
-	color: white;
-	text-decoration: none;
 }

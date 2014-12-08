@@ -4,6 +4,9 @@
 		<meta charset="UTF-8"/>
 		<title>Échange de logements | Sweetch</title>
 		<link rel="stylesheet" href="../CSS/style.css"/>
+		<link rel="stylesheet" href="../CSS/header.css"/>
+		<link rel="stylesheet" href="../CSS/footer.css"/>
+		<link rel="stylesheet" href="../CSS/general.css"/>
 		<link rel="shortcut icon" href="../Images/icon-sweetch.png"/>
 	</head>
 
