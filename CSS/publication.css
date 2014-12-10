@@ -1,109 +1,35 @@
-/* On définit la police téléchargée */
-@font-face {
-	font-family: 'lobster';
-	src: url('Lobster_1.3.otf');
-	font-weight: lighter;
-}
-
-/* permet de mettre en full-size */
-*
-{
-	margin: 0;
-	padding: 0;
-}
-
-/*
-Partie header
-*/
-
-header
-{
-	height: 75px;
-	width: 100%;
-	border-bottom: 1px solid rgb(12,59,102);
-	position: relative;
-	background-color: rgb(27,120,209);
-}
-
-#nav-logo
-{
-	position: absolute;
-	top: 5px;
-	left: 15px;
-	float: left;
-}
-
-#nav
-{
-	height: 75px;
-	position: absolute;
-	width: auto;
-	right: 0px;
-}
-
-#nav li 
-{
-	display: inline-block;
-	list-style-type: none;
-	line-height: 75px;
-}
-
-.header-link
-{
-	display: block;
-	height: 100%;
-	padding: 0 5px;
-	text-decoration: none;
-	font-size: 17px;
-	font-family: lobster, Arial, sans-serif;
-	color: white;
-}
-
-.header-link:hover
-{
-	background-color: rgb(19,88,162);
-	color: rgb(180,180,180);
-}
-
-/*
-Fin de la partie header
-*/
-
 /*
 Partie publication
 */
 
 section
 {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 20px;
 	position: relative;
 	height: auto;
-	background: url("fond-sweetch.png");
+	background: url("../Images/fond-sweetch.png");
 	width: 100%;
+	padding-bottom: 20px;
+	
 }
-
-table
-{
-	height: 475px;
-	width: 1000px;
-	margin: auto;
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 3px;
-}
-
-.table
-{
-	margin-bottom: 100px;
-}
-
 tr, td 
 {
-	border: 1px solid black;
+	border: none;
 	font-family: "Century Gothic", Arial, sans-serif;
 }
 
+.espace_photo
+{
+	width: 110px;
+	height: 120px;
+	background-color: white;
+	color: grey;
+	margin:auto;
+	border-radius: 10px;
+	border-style: dashed;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 .titre
 {
 	height: 100px;
@@ -111,25 +37,52 @@ tr, td
 	border-bottom: 1px solid #C1C1C1;
 	padding-left: 10px;
 }
-
+.case_photo
+{
+	width:25%;
+	height: 150px;
+}
 .case
 {
 	width: 25%;
 	height: 70px;
 	font-size: 17px;
 }
-
+.titre_choix
+{
+	height: 10px;
+	width: 25%;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-top: 15px;
+}
+.choix
+{
+	width: 25%;
+	height:30px;
+	font-size: 15px;
+	padding-left: 10px;
+}
+#table1,#table2,#table3,#table4
+{
+	height: auto;
+	width: 800px;
+	margin: auto;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
 .autre
 {
-	text-align: right;
-	padding-right: 5px;
+	padding-left: 50px;
 }
 
 
 select
 {
 	background-color: #C1C1C1;
-	width: 90%;
+	width: 80%;
 	height: 60%;
 	font-family: "Century Gothic", Arial, sans-serif;
 	font-size: 17px;
@@ -139,7 +92,10 @@ select
 {
 	padding-left: 15px;
 }
-
+.text_autre
+{
+	text-align: right;
+}
 .input
 {
 	height: 60%;
@@ -148,15 +104,7 @@ select
 	font-size: 17px;
 }
 
-.capacite
-{
-	height: 60%;
-	font-family: "Century Gothic", Arial, sans-serif;
-	font-size: 17px;
-	width: 50%;
-}
-
-#ville
+#ville,#surface,#codePostal,#capacite
 {
 	height: 60%;
 	font-family: "Century Gothic", Arial, sans-serif;
@@ -169,87 +117,24 @@ select
 	height: auto;
 }
 
-.textarea
-{
-	max-height: 200px;
-}
-
-.suivant
+.precedent,.suivant 
 {
 	text-align: center;
 	text-decoration: none;
 	color: white;
 	background-color: rgb(42,102,181);
 	display: block;
-	height: 80%;
-	width: 95%;
-	padding-top: 20px;
+	height: 60%;
+	width: 80%;
 	border-radius: 3px;
 	border: 1px solid black;
 }
-
-/*
-Fin de la partie publication
-*/
-
-/* 
-Partie footer
-*/
-
-footer
+.publier
 {
-	height: 200px;
-	width: 100%;
-	background-color: rgb(21,72,145);
-}
-
-.footer_link
-{
+	background-color: rgb(42,102,181);
 	color: white;
-	font-family: "Century Gothic", Arial, sans-serif;
-	font-size: 20px;
+	width:180px;
+	height:45px;
 	text-align: center;
-	padding: 30px 0;
+	margin-left: 990px;
 }
-
-#fb
-{
-	float:left;
-	width: 50px;
-}
-
-#twitter
-{
-	float: right;
-	width: 50px;
-}
-
-#clear
-{
-	clear: left;
-}
-
-#footer-logo
-{
-	width: 100px;
-	margin: 0 auto;
-}
-
-.footerxlink
-{
-	padding-top: 30px;
-	text-align: center;
-	color: white;
-}
-
-.footer-link
-{
-	font-family: "Century Gothic", Arial, sans-serif;
-	font-size: 12px;
-	color: white;
-	text-decoration: none;
-}
-
-/*
-Fin de la partie footer
-*/
