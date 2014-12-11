@@ -1,0 +1,384 @@
+@font-face {
+	font-family: 'lobster';
+	src: url('Lobster_1.3.otf');
+	font-weight: lighter;
+}
+
+*
+{
+	margin:0;
+	padding:0;
+}
+
+
+
+
+
+
+/*Partie header*/
+
+header
+{
+	border-bottom: 2px solid black;
+	background: #164f86; /* Old browsers */
+	background: -moz-linear-gradient(top,  #164f86 0%, #0d3569 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#164f86), color-stop(100%,#0d3569)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #164f86 0%,#0d3569 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#164f86', endColorstr='#0d3569',GradientType=0 ); /* IE6-9 */
+	height: 75px;
+}
+
+#nav
+{
+	display: inline-block;
+	width: 100%;
+	margin-top: 0px;
+	text-align: right;
+}
+
+#nav ul
+{
+	list-style-type: none;
+}
+
+#nav li
+{
+	display: inline-block;
+	height: 75px;
+	font-size: 15px;
+	color: white;
+	font-family: lobster, sans-serif;
+	position: relative;
+	float:right;
+	width:10em;
+	text-align:center;
+}
+
+li.logo
+{
+	display: inline-block;
+	text-align: left;
+	height: 75px;
+	width: 240px;
+	position: absolute;
+}
+
+.header-link
+{
+	display: block;
+	height: 100%;
+	line-height: 75px;
+	padding: 0 5px;
+	color: white;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.header-link:hover
+{
+	background-color: rgb(33,111,224);
+	color: white;
+	border-radius: 70px;
+}
+.content-1
+{
+	display: block;
+	width: 100%;
+	height: 30px;
+	background-color: white;
+}
+
+.content
+{
+	display: block;
+	width: 100%;
+	height: 575px;
+	background-color: rgb(200,200,200);
+}
+
+					/*Fin de partie header*/
+					
+					/*Slide*/
+					
+#slideshow { 
+    position: relative;  
+    width: 640px;  
+    height: 310px;    
+    margin: 0 auto 2em;  
+    border: 1px solid #ddd;  
+    background: #C1C1C1;  
+    /* CSS3 effects */  
+    background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);  
+    border-radius: 2px 2px 2px 2px;  
+    box-shadow: 0 0 3px rgba(0,0,0, 0.2);  
+}  
+   
+					/* avanced box-shadow*/  
+#slideshow:before,  
+#slideshow:after {  
+    position: absolute;  
+    bottom:16px;  
+    z-index: -10;  
+    width: 50%;  
+    height: 20px;  
+    content: " ";  
+    background: rgba(0,0,0,0.1);  
+    border-radius: 50%;  
+    box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);  
+}  
+#slideshow:before {  
+    left:0;  
+    transform: rotate(-4deg);  
+}  
+#slideshow:after {  
+    right:0;  
+    transform: rotate(4deg);  
+}					
+					
+/* gestion des dimensions et débordement du conteneur */  
+#slideshow .container {  
+    position:relative;  
+    width: 640px;  
+    height: 310px;  
+    overflow: hidden;  
+}  
+      
+/* on prévoit un petit espace gris pour la timeline */  
+#slideshow .container:after {  
+    position:absolute;  
+    bottom: 0; left:0;  
+    content: " ";  
+    width: 100%;  
+    height: 1px;  
+    background: #999;  
+}  
+/*  
+   le conteneur des slides 
+   en largeur il fait 100% x le nombre de slides 
+*/  
+#slideshow .slider {  
+    position: absolute;  
+    left:0; top:0;  
+    width: 400%;  
+    height: 310px;  
+}  
+  
+/* annulation des marges sur figure */  
+#slideshow figure {  
+    position:relative;  
+    display:inline-block;  
+    padding:0; margin:0;  
+}  
+/* petit effet de vignette sur les images */  
+#slideshow figure:after {  
+    position: absolute;  
+    display:block;  
+    content: " ";  
+    top:0; left:0;  
+    width: 100%; height: 100%;  
+    box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;  
+} 	
+				
+/* styles de nos légendes */  
+#slideshow figcaption {  
+    position:absolute;  
+    left:0; right:0; bottom: 5px;  
+    padding: 20px;  
+    margin:0;  
+    border-top: 1px solid rgb(225,225,225);  
+    text-align:center;  
+    letter-spacing: 0.05em;  
+    word-spacing: 0.05em;  
+    font-family: Georgia, Times, serif;  
+    background: #fff;  
+    background: rgba(255,255,255,0.7);  
+    color: #555;  
+    text-shadow: -1px -1px 0 rgba(255,255,255,0.3);  
+} 					
+					
+/* fonction d'animation, n'oubliez pas de prefixer ! */  
+@keyframes slider {  
+    0%, 20%, 100%   { left: 0 }  
+    25%, 45%        { left: -100% }  
+    50%, 70%        { left: -200% }  
+    75%, 95%        { left: -300% }  
+}
+/* complétez le sélecteur : ... avec la propriété animation*/  
+#slideshow .slider {   
+    animation: slider 32s infinite;  
+} 					
+
+#timeline {  
+    position: absolute;  
+    background-color: rgb(27,120,209);  
+    bottom: 0px;  
+    left: 0px;  
+    height: 2px;   
+    width: 0;  
+    /* fonction d'animation */  
+    animation: timeliner 32s infinite;  
+} 			
+@keyframes timeliner {  
+    0%, 25%, 50%, 75%, 100% { width: 0;     }  
+    20%, 45%, 70%, 90%      { width: 640px; }  
+}					
+
+.section_1
+{
+	width:100%;
+	height:310px;
+	padding-top: 100px;
+	padding-bottom:100px;
+	background-color:#C1C1C1;
+	float: left;
+}				
+					
+					
+					/*Fin Slide*/
+		
+
+
+.bloc_1
+{
+	position: relative;
+	width:60%;
+	height:auto;
+	float:left;
+	background-color: red;
+}
+
+.description , .service , .contrainte , .equipement
+{
+	width: 100%;
+	height: 150px;
+	border: 1px solid black;
+}
+
+.bloc_2
+{
+	padding-top: 30px;
+	width:40%;
+	height:auto;
+	float:left;
+	background-color: green;
+	padding-bottom: 30px;
+}
+
+.carte
+{
+	width: 75%;
+	height: 220px;
+	border: 1px solid black;
+	margin: 30px auto;
+}
+
+.disponibilité
+{
+	width: 75%;
+	height: 200px;
+	border: 1px solid black;
+	margin: auto;
+}
+
+.clear
+{
+clear: both;
+}
+.commentaire
+{
+	width:100%;
+	height: 200px;
+	background-color: pink;
+}
+	
+.email
+{
+		font-family: lobster , sans-serif;
+}
+
+.bouton p
+{
+		position: absolute;
+		font-family: lobster , sans-serif;
+		font-size: 2em;
+		width: 200px;
+		height: 43px;
+		padding-top: 9px;
+		text-align: center;
+		color: white;
+		background:  -moz-linear-gradient(top,  #164f86 0%, #0d3569 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#164f86), color-stop(100%,#0d3569)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #164f86 0%,#0d3569 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #164f86 0%,#0d3569 100%); /* W3C */
+		border-radius: 34px;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+		box-shadow: 4px 4px 12px rgba(0, 0, 0, 1);
+		
+
+}
+.bouton p:hover
+{
+	background:  -moz-linear-gradient(top,  #164f86 0%, #0d3569 10%);
+}
+.bouton p:active
+{
+	box-shadow: 1px 1px 15px black inset,
+				0 1px 0 rgba( 255,255,255, 0.5);
+}
+
+
+					/*footer*/
+
+footer
+{
+	background-color: rgb(49,89,139);
+	width: 100%;
+}
+
+footer p 
+{
+	font-family: Arial, sans-serif;
+	color: white;
+}
+
+.footer_link /* Rejoignez-nous :*/
+{
+	font-family: Arial, sans-serif;
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+}
+
+#footer-logo /* bloc logos */
+{
+	margin-bottom: 30px;
+}
+.flogo /* logo facebook */
+{
+	display: inline-block;
+	position: relative;
+	margin-top: 20px;
+}
+
+.tlogo /* logo twitter */
+{
+	display: inline-block;
+	position: relative;
+	margin-top: 20px;
+}
+
+.footerxlink /* Nous contacter ... forum */ 
+{
+	padding-bottom: 50px;
+}
+
+.footer-link /* Nous contacter ... Forum */ 
+{
+	color: white;
+	text-decoration: none;
+}
