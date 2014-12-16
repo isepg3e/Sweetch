@@ -105,3 +105,24 @@ table
 /*
 Fin de la partie formulaire
 */
+
+#erreur
+{
+	display: block;
+	height: 30px;
+	width: 600px;
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 17px;
+	color: white;
+	padding-left: 15px;
+	background-color: #D11316;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
