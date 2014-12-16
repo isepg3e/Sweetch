@@ -4,23 +4,23 @@
 
 		<meta charset="UTF-8"/>
 		<title>Inscription | Échange de logements | Sweetch</title>
-		<link rel="stylesheet" href="../CSS/inscription.css"/>
-		<link rel="stylesheet" href="../CSS/header.css"/>
-		<link rel="stylesheet" href="../CSS/footer.css"/>
-		<link rel="stylesheet" href="../CSS/general.css"/>
-		<link rel="shortcut icon" href="../Images/icon-sweetch.png"/>
+		<link rel="stylesheet" href="CSS/inscription.css"/>
+		<link rel="stylesheet" href="CSS/header.css"/>
+		<link rel="stylesheet" href="CSS/footer.css"/>
+		<link rel="stylesheet" href="CSS/general.css"/>
+		<link rel="shortcut icon" href="Images/icon-sweetch.png"/>
 
 	</head>
 	
 	<body>
 		
-		<?php include ("header.php");?>
+		<?php include("Vues/header.php"); ?>
 
 		<section>
 
 			<div class="leftbox">
 
-				<form method="POST" action="inscription_post.php">
+				<form method="POST" action="index.php?page=inscription">
 					<table>
 						<tr>
 							<td class="inscription" colspan=2 >S'inscrire</td>
@@ -58,11 +58,11 @@
 
 						<tr>
 							<td class="content">Confirmation du mot de passe :</td>
-							<td class="content"><input class="input" type="password" name="confirmation" placeholder="Confirmez votre mot de passe"/></td>
+							<td class="content"><input class="input" type="password" name="cmdp" placeholder="Confirmez votre mot de passe"/></td>
 						</tr>
 
 						<tr>
-							<td class="conditions"><a href="#######">Voir les conditions générales d'utilisation</a></td>
+							<td class="conditions"><a href="">Voir les conditions générales d'utilisation</a></td>
 						</tr>
 
 						<tr>
@@ -70,32 +70,22 @@
 						</tr>
 
 						<tr>
-							<td class="content" colspan=2> <input type="submit" value="S'inscrire"/> </td>
+							<td class="content" colspan=2><input type="submit" value="S'inscrire"/></td>
 						</tr>
 					</table> 
-				</form>
+					<?php include("Modele/inscription_post.php"); ?>
+		</form>
 
-			</div>
+
+	</div>
 
 			<div class="rightbox">
-				<center><img src="../Images/sweetch-marketing.png" alt="échangez vos logements avec Sweetch"/></center>
+				<center><img src="Images/sweetch-marketing.png" alt="échangez vos logements avec Sweetch"/></center>
 			</div>
-
+		
 		</section>
-		<?php include ("footer.php"); ?>
 
-<?php
-// Connexion à la base de données
-try
-{
-$bdd = new PDO('mysql:host=localhost;dbname=sweetch', 'root', 'kilo', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch(Exception $e)
-{
-die('Erreur : '.$e->getMessage());
-}
-?>									
+		<?php include("Vues/footer.php"); ?>
 
-	
 	</body>
 </html>
