@@ -1,7 +1,7 @@
 <?php 
     session_start();
     
-    if (isset($_GET['page'])
+    if (isset($_GET['page']))
     {
         if ($_GET['page'] == "accueil")
             {
